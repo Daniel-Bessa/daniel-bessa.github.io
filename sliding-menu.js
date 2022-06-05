@@ -73,6 +73,20 @@
 		onCustomWidgetAfterUpdate(oChangedProperties) {
             var that = this;
             loadthis(that);
+
+
+            let firstBtn = document.getElementById("firstBtn");
+            // let firstBtn = window.getElementById("firstBtn");
+            console.log("This is a test to see firstBtn", firstBtn)
+            document.querySelector("firstBtn").addEventListener("click", function(){
+                console.log("this is a test");
+                // let firstUl = document.querySelector("#firstUl");
+                let firstUlbyId = document.getElementById("firstUl");
+                console.log("firstUL", firstUlbyId);
+                // firstUl.removeAttribute("hidden");
+                firstUlbyId.removeAttribute("hidden");
+            });
+
             this.redraw();
         }
         
@@ -104,18 +118,7 @@
         //     "use strict";
         // })
 
-        let firstBtn = document.getElementById("firstBtn");
-        // let firstBtn = window.getElementById("firstBtn");
-        console.log("This is a test to see firstBtn", firstBtn)
-
-        document.querySelector("button").addEventListener("click", function(){
-            console.log("this is a test");
-            // let firstUl = document.querySelector("#firstUl");
-            let firstUlbyId = document.getElementById("firstUl");
-            console.log("firstUL", firstUlbyId);
-            // firstUl.removeAttribute("hidden");
-            firstUlbyId.removeAttribute("hidden");
-        });
+        
     }
 
 })();
