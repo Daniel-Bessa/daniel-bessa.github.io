@@ -54,80 +54,6 @@
       }
 
       connectedCallback() {
-          try {
-              if (window.commonApp) {
-                  let outlineContainer = commonApp.getShell().findElements(true, ele => ele.hasStyleClass && ele.hasStyleClass("sapAppBuildingOutline"))[0]; // sId: "__container0"
-
-                  if (outlineContainer && outlineContainer.getReactProps) {
-                      let parseReactState = state => {
-                          let components = {};
-
-                          let globalState = state.globalState;
-                          let instances = globalState.instances;
-                          let app = instances.app["[{\"app\":\"MAIN_APPLICATION\"}]"];
-                          let names = app.names;
-
-                          for (let key in names) {
-                              let name = names[key];
-
-                              let obj = JSON.parse(key).pop();
-                              let type = Object.keys(obj)[0];
-                              let id = obj[type];
-
-                              components[id] = {
-                                  type: type,
-                                  name: name
-                              };
-                          }
-
-                          for (let componentId in components) {
-                              let component = components[componentId];
-                          }
-
-                          let metadata = JSON.stringify({
-                              components: components,
-                              vars: app.globalVars
-                          });
-
-                          if (metadata != this.metadata) {
-                              this.metadata = metadata;
-
-                              this.dispatchEvent(new CustomEvent("propertiesChanged", {
-                                  detail: {
-                                      properties: {
-                                          metadata: metadata
-                                      }
-                                  }
-                              }));
-                          }
-                      };
-
-                      let subscribeReactStore = store => {
-                          this._subscription = store.subscribe({
-                              effect: state => {
-                                  parseReactState(state);
-                                  return {
-                                      result: 1
-                                  };
-                              }
-                          });
-                      };
-
-                      let props = outlineContainer.getReactProps();
-                      if (props) {
-                          subscribeReactStore(props.store);
-                      } else {
-                          let oldRenderReactComponent = outlineContainer.renderReactComponent;
-                          outlineContainer.renderReactComponent = e => {
-                              let props = outlineContainer.getReactProps();
-                              subscribeReactStore(props.store);
-
-                              oldRenderReactComponent.call(outlineContainer, e);
-                          }
-                      }
-                  }
-              }
-          } catch (e) {}
       }
 
       disconnectedCallback() {
@@ -150,11 +76,11 @@
       _firePropertiesChanged() {
           this.password = "";
           this.dispatchEvent(new CustomEvent("propertiesChanged", {
-              detail: {
-                  properties: {
-                      password: this.password
-                  }
-              }
+            //   detail: {
+            //       properties: {
+            //           password: this.password
+            //       }
+            //   }
           }));
       }
 
@@ -173,11 +99,11 @@
           ];
       }
 
-      attributeChangedCallback(name, oldValue, newValue) {
-          if (oldValue != newValue) {
-              this[name] = newValue;
-          }
-      }
+    //   attributeChangedCallback(name, oldValue, newValue) {
+    //       if (oldValue != newValue) {
+    //           this[name] = newValue;
+    //       }
+    //   }
 
   }
   customElements.define("com-fd-djaja-sap-sac-inputpassword", InputPassword);
@@ -230,12 +156,4 @@
           }
       });
   }
-
-  function createGuid() {
-      return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, c => {
-          let r = Math.random() * 16 | 0,
-              v = c === "x" ? r : (r & 0x3 | 0x8);
-          return v.toString(16);
-      });
-  }  
 })();
