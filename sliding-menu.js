@@ -104,14 +104,17 @@
         //     "use strict";
         // })
 
-        document.getElementById("firstBtn").addEventListener("click", function(){
-            console.log("this is a test");
-            let firstUl = document.querySelector("#firstUl");
-            let firstUlbyId = document.getElementById("firstUl");
-            console.log("firstUL", firstUL ,"-", firstUlbyId);
-            firstUl.removeAttribute("hidden");
-            firstUlbyId.removeAttribute("hidden");
-        });
+        let firstBtn = document.getElementById("firstBtn");
+        console.log("This is a test to see firstBtn", firstBtn)
+
+        // document.getElementById("firstBtn").addEventListener("click", function(){
+        //     console.log("this is a test");
+        //     let firstUl = document.querySelector("#firstUl");
+        //     let firstUlbyId = document.getElementById("firstUl");
+        //     console.log("firstUL", firstUL ,"-", firstUlbyId);
+        //     firstUl.removeAttribute("hidden");
+        //     firstUlbyId.removeAttribute("hidden");
+        // });
     }
 
 })();
