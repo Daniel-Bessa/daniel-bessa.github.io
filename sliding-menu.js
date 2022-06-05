@@ -104,7 +104,7 @@
         //     "use strict";
         // })
 
-        document.getElementById("#firstBtn").addEventListener("click", function(){
+        document.getElementById("firstBtn").addEventListener("click", function(){
             console.log("this is a test");
             let firstUl = document.querySelector("#firstUl");
             let firstUlbyId = document.getElementById("firstUl");
