@@ -103,19 +103,11 @@
 
     function loadthis(that){
         var that_ = that;
-            
+
         let firstBtn = this.$().find("#firstBtn");
-        console.log("This is a test to see firstBtn", firstBtn);
+        console.log("This is a test to see firstBtn", firstBtn.parentNode);
         let button = document.getElementById("firstBtn");
         console.log("This is button", button);
-        // button.addEventListener("click", function(){
-        //     console.log("this is a test");
-
-        //     let firstUlbyId = this.$().find("#firstUl");
-        //     console.log("firstUL", firstUlbyId);
-            
-        //     firstUlbyId.removeAttribute("hidden");
-        // });
 
         let navDiv = this.$().find("nav");
         console.log("this is a test too see nav", navDiv);
