@@ -1,7 +1,7 @@
 (function()  {
     let tmpl = document.createElement('template');
     tmpl.innerHTML = `
-        <h1>Hello World</h1>
+        <h1>Hello World cenas</h1>
     `;
 
     customElements.define('com-sap-sliding-menu', class SlidingMenu extends HTMLElement {
