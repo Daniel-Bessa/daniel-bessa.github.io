@@ -102,7 +102,7 @@
         let firstBtn = this.$().find("#firstBtn");
         console.log("This is a test to see firstBtn", firstBtn);
 
-        firstBtn.addEventListener("click", function(){
+        button.addEventListener("click", function(){
             console.log("this is a test");
 
             let firstUlbyId = this.$().find("#firstUl");
