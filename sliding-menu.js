@@ -3,7 +3,8 @@
     tmpl.innerHTML = `
         <style>
             button {
-                padding: 20px;
+                width: 100%;
+                
             }
         </style>
         <nav>
