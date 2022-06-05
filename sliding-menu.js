@@ -94,21 +94,10 @@
 
     function loadthis(that){
         var that_ = that;
-        console.log("this is a test to see if loadThis works");
-        
-        // let content = document.createElement('div');
-        // content.slot = "content";
-        // that_.appendChild(content);
-
-        // sap.ui.getCore().attachInit(function (){
-        //     "use strict";
-        // })
-
-        
-        
+            
         let firstBtn = this.$().find("#firstBtn");
-        // let firstBtn = window.getElementById("firstBtn");
-        console.log("This is a test to see firstBtn", firstBtn)
+        console.log("This is a test to see firstBtn", firstBtn);
+        
         firstBtn.addEventListener("click", function(){
             console.log("this is a test");
             // let firstUl = document.querySelector("#firstUl");
