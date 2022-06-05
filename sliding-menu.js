@@ -40,10 +40,10 @@
 			this._shadowRoot = this.attachShadow({mode: "open"});
             this._shadowRoot.appendChild(tmpl.content.cloneNode(true));
 
-            this.addEventListener("click", event => {
-                var eventClick = new Event("onClick");
-                this.dispatchEvent(eventClick);
-            });
+            // this.addEventListener("click", event => {
+            //     var eventClick = new Event("onClick");
+            //     this.dispatchEvent(eventClick);
+            // });
 
             this._props = {};
             this._firstConnection = false;
@@ -108,7 +108,7 @@
         // let firstBtn = window.getElementById("firstBtn");
         console.log("This is a test to see firstBtn", firstBtn)
 
-        document.getElementById("firstBtn").addEventListener("click", function(){
+        document.querySelector("button").addEventListener("click", function(){
             console.log("this is a test");
             // let firstUl = document.querySelector("#firstUl");
             let firstUlbyId = document.getElementById("firstUl");
