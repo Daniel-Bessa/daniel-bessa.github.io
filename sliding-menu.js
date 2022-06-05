@@ -3,14 +3,14 @@
     tmpl.innerHTML = `
         <nav>
             <button>Sales Analytics</button>
-            <ul>
+            <ul hidden="hidden">
                 <li>Proxy Sales</li>
                 <li>Proxy Analysis</li>
                 <li>Proxy &O</li>
             </ul>
             <button>AI Sales Forecasting</button>
             <button>AI Cash Forecasting</button>
-            <ul>
+            <ul hidden="hidden">
                 <li></li>
                 <li></li>
                 <li></li>
