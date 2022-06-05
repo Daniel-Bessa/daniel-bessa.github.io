@@ -104,7 +104,8 @@
         //     "use strict";
         // })
 
-        let firstBtn = document.getElementById("firstBtn");
+        // let firstBtn = document.getElementById("firstBtn");
+        let firstBtn = window.getElementById("firstBtn");
         console.log("This is a test to see firstBtn", firstBtn)
 
         // document.getElementById("firstBtn").addEventListener("click", function(){
