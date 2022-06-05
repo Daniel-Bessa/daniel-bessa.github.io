@@ -92,6 +92,7 @@
 
     function loadthis(that){
         var that_ = that;
+        console.log("this is a test to see if loadThis works");
         
         // let content = document.createElement('div');
         // content.slot = "content";
