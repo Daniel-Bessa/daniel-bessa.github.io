@@ -104,18 +104,18 @@
         //     "use strict";
         // })
 
-        // let firstBtn = document.getElementById("firstBtn");
-        let firstBtn = window.getElementById("firstBtn");
+        let firstBtn = document.getElementById("firstBtn");
+        // let firstBtn = window.getElementById("firstBtn");
         console.log("This is a test to see firstBtn", firstBtn)
 
-        // document.getElementById("firstBtn").addEventListener("click", function(){
-        //     console.log("this is a test");
-        //     let firstUl = document.querySelector("#firstUl");
-        //     let firstUlbyId = document.getElementById("firstUl");
-        //     console.log("firstUL", firstUL ,"-", firstUlbyId);
-        //     firstUl.removeAttribute("hidden");
-        //     firstUlbyId.removeAttribute("hidden");
-        // });
+        document.getElementById("firstBtn").addEventListener("click", function(){
+            console.log("this is a test");
+            // let firstUl = document.querySelector("#firstUl");
+            let firstUlbyId = document.getElementById("firstUl");
+            console.log("firstUL", firstUlbyId);
+            // firstUl.removeAttribute("hidden");
+            firstUlbyId.removeAttribute("hidden");
+        });
     }
 
 })();
