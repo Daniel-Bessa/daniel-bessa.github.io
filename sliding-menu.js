@@ -70,12 +70,12 @@
           });
           _shadowRoot.appendChild(tmpl.content.cloneNode(true));
 
-          _id = createGuid();
+        //   _id = createGuid();
 
-          _shadowRoot.querySelector("#oView").id = _id + "_oView";
+          _shadowRoot.querySelector("#oView").id = /*_id + */ "_oView";
 
           this._export_settings = {};
-          this._export_settings.password = "";
+        //   this._export_settings.password = "";
 
           this.addEventListener("click", event => {
               console.log('click');
@@ -103,7 +103,7 @@
       }
 
       _firePropertiesChanged() {
-          this.password = "";
+        //   this.password = "";
           this.dispatchEvent(new CustomEvent("propertiesChanged", {
             //   detail: {
             //       properties: {
@@ -114,19 +114,19 @@
       }
 
       // SETTINGS
-      get password() {
-          return this._export_settings.password;
-      }
-      set password(value) {
-          value = _password;
-          this._export_settings.password = value;
-      }
+    //   get password() {
+    //       return this._export_settings.password;
+    //   }
+    //   set password(value) {
+    //       value = _password;
+    //       this._export_settings.password = value;
+    //   }
 
-      static get observedAttributes() {
-          return [
-              "password"
-          ];
-      }
+    //   static get observedAttributes() {
+    //       return [
+    //           "password"
+    //       ];
+    //   }
 
     //   attributeChangedCallback(name, oldValue, newValue) {
     //       if (oldValue != newValue) {
@@ -157,17 +157,17 @@
 
               return Controller.extend("myView.Template", {
                   onButtonPress: function(oEvent) {
-                      _password = oView.byId("passwordInput").getValue();
+                    //   _password = oView.byId("passwordInput").getValue();
                       that._firePropertiesChanged();
-                      console.log(_password);
+                    //   console.log(_password);
 
                       this.settings = {};
-                      this.settings.password = "";
+                    //   this.settings.password = "";
 
                       that.dispatchEvent(new CustomEvent("onStart", {
-                          detail: {
-                              settings: this.settings
-                          }
+                        //   detail: {
+                        //       settings: this.settings
+                        //   }
                       }));
                   } 
               });
@@ -175,7 +175,7 @@
 
           //### THE APP: place the XMLView somewhere into DOM ###
           var oView  = sap.ui.xmlview({
-              viewContent: jQuery(_shadowRoot.getElementById(_id + "_oView")).html(),
+              viewContent: jQuery(_shadowRoot.getElementById(/*_id + */ "_oView")).html(),
           });
           oView.placeAt(content);
 
