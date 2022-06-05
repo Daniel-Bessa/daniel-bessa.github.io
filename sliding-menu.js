@@ -102,6 +102,7 @@
         let firstBtn = this.$().find("#firstBtn");
         console.log("This is a test to see firstBtn", firstBtn);
         let button = document.getElementById("firstBtn");
+        console.log("This is button", button);
         button.addEventListener("click", function(){
             console.log("this is a test");
 
