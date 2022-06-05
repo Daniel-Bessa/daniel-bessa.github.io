@@ -2,6 +2,11 @@
     let tmpl = document.createElement('template');
     tmpl.innerHTML = `
         <style>
+            nav {
+                width: 30%;
+                overflow: hidden;
+                white-space: nowrap;
+            }
             button {
                 width: 100%;
                 padding:5px;
