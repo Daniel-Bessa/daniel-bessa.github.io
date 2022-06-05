@@ -102,7 +102,7 @@
         // })
 
         document.querySelector("#firstBtn").addEventListener("click", function(){
-            let firstUl = document.querySelector("#firstUL");
+            let firstUl = document.querySelector("#firstUl");
 
             firstUl.removeAttribute("hidden");
         });
