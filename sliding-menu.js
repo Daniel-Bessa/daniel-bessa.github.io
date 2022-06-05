@@ -108,16 +108,17 @@
         console.log("This is a test to see firstBtn", firstBtn);
         let button = document.getElementById("firstBtn");
         console.log("This is button", button);
-        button.addEventListener("click", function(){
-            console.log("this is a test");
+        // button.addEventListener("click", function(){
+        //     console.log("this is a test");
 
-            let firstUlbyId = this.$().find("#firstUl");
-            console.log("firstUL", firstUlbyId);
+        //     let firstUlbyId = this.$().find("#firstUl");
+        //     console.log("firstUL", firstUlbyId);
             
-            firstUlbyId.removeAttribute("hidden");
-        });
+        //     firstUlbyId.removeAttribute("hidden");
+        // });
 
-        
+        let navDiv = this.$().find("nav");
+        console.log("this is a test too see nav", navDiv);
     }
 
 })();
