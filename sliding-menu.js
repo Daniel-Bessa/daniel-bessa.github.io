@@ -4,6 +4,7 @@
         <style>
             button {
                 width: 100%;
+                padding:5px;
                 background-color: #fff;
                 border: 0px;
                 text-align: left;
