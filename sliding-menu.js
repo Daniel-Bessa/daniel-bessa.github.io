@@ -109,7 +109,7 @@
         let firstBtn = this.$().find("#firstBtn");
         // let firstBtn = window.getElementById("firstBtn");
         console.log("This is a test to see firstBtn", firstBtn)
-        document.querySelector("firstBtn").addEventListener("click", function(){
+        this.$().find("#firstBtn").addEventListener("click", function(){
             console.log("this is a test");
             // let firstUl = document.querySelector("#firstUl");
             let firstUlbyId = document.getElementById("firstUl");
