@@ -15,20 +15,20 @@
             }
         </style>
         <nav>
-            <button>Sales Analytics</button>
-            <ul hidden="hidden">
+            <button id="firstBtn">Sales Analytics</button>
+            <ul id="firstUl" hidden="hidden">
                 <li>Proxy Sales</li>
                 <li>Proxy Analysis</li>
                 <li>Proxy &O</li>
             </ul>
-            <button>AI Sales Forecasting</button>
-            <button>AI Cash Forecasting</button>
-            <ul hidden="hidden">
+            <button id="secondBtn">AI Sales Forecasting</button>
+            <button id="thirdBtn">AI Cash Forecasting</button>
+            <ul id="thirdUl" hidden="hidden">
                 <li></li>
                 <li></li>
                 <li></li>
             </ul>
-            <button>Business Input</button>
+            <button id="forthBtn">Business Input</button>
         </nav>
     `;
 
@@ -39,10 +39,19 @@
 			super(); 
 			this._shadowRoot = this.attachShadow({mode: "open"});
             this._shadowRoot.appendChild(tmpl.content.cloneNode(true));
+
+            this.addEventListener("click", event => {
+                var eventClick = new Event("onClick");
+                this.dispatchEvent(eventClick);
+            });
+
+            this._props = {};
+            this._firstConnection = false;
 		}
 
         //Fired when the widget is added to the html DOM of the page
         connectedCallback(){
+            this.firstConnection = true;
         }
 
          //Fired when the widget is removed from the html DOM of the page (e.g. by hide)
@@ -52,7 +61,12 @@
 
          //When the custom widget is updated, the Custom Widget SDK framework executes this function first
 		onCustomWidgetBeforeUpdate(oChangedProperties) {
-
+            if (this.firstConnection === true){
+                if (this._shadowRoot.innerHTML.length < 1){
+                    this.redraw();
+                    loadthis(this);
+                }
+            }
 		}
 
         //When the custom widget is updated, the Custom Widget SDK framework executes this function after the update
@@ -73,5 +87,25 @@
         */
 
         redraw(){}
+
     });
+
+    function loadthis(that){
+        var that_ = that;
+        
+        // let content = document.createElement('div');
+        // content.slot = "content";
+        // that_.appendChild(content);
+
+        // sap.ui.getCore().attachInit(function (){
+        //     "use strict";
+        // })
+
+        document.querySelector("#firstBtn").addEventListener("click", function(){
+            let firstUl = document.querySelector("#firstUL");
+
+            firstUl.removeAttribute("hidden");
+        });
+    }
+
 })();
