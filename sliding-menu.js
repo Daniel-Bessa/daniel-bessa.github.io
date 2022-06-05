@@ -13,17 +13,21 @@
                 background-repeat: no-repeat;
                 background-position: right 24px center;
             }
+            ul {
+                margin: 0;
+                list-style: none;
+            }
         </style>
         <nav>
             <button id="firstBtn">Sales Analytics</button>
-            <ul id="firstUl" hidden="hidden">
+            <ul id="firstUl">
                 <li>Proxy Sales</li>
                 <li>Proxy Analysis</li>
                 <li>Proxy &O</li>
             </ul>
             <button id="secondBtn">AI Sales Forecasting</button>
             <button id="thirdBtn">AI Cash Forecasting</button>
-            <ul id="thirdUl" hidden="hidden">
+            <ul id="thirdUl">
                 <li></li>
                 <li></li>
                 <li></li>
@@ -97,13 +101,13 @@
             
         let firstBtn = this.$().find("#firstBtn");
         console.log("This is a test to see firstBtn", firstBtn);
-        
+
         firstBtn.addEventListener("click", function(){
             console.log("this is a test");
-            // let firstUl = document.querySelector("#firstUl");
-            let firstUlbyId = document.getElementById("firstUl");
+
+            let firstUlbyId = this.$().find("#firstUl");
             console.log("firstUL", firstUlbyId);
-            // firstUl.removeAttribute("hidden");
+            
             firstUlbyId.removeAttribute("hidden");
         });
 
