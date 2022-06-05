@@ -1,6 +1,11 @@
 (function()  {
     let tmpl = document.createElement('template');
     tmpl.innerHTML = `
+        <style>
+            button {
+                padding: 20px;
+            }
+        </style>
         <nav>
             <button>Sales Analytics</button>
             <ul hidden="hidden">
