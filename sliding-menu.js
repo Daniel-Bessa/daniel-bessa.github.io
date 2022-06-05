@@ -4,7 +4,10 @@
         <style>
             button {
                 width: 100%;
-                
+                background-color: #fff;
+                border: 0px;
+                text-align: left;
+
             }
         </style>
         <nav>
