@@ -13,7 +13,11 @@
     {
       "kind": "main",
       "tag": "com-fd-djaja-sap-sac-inputpassword",
+<<<<<<< HEAD
       "url": "https://daniel-bessa.github.io/sliding-menu.js",
+=======
+      "url": "https://raw.githubusercontent.com/Daniel-Bessa/sliding-menu/main/sliding-menu.js",
+>>>>>>> 8578289ab7d4e0c56b6d330a796ae2545a04bde0
       "integrity": "",
       "ignoreIntegrity": true
     }
