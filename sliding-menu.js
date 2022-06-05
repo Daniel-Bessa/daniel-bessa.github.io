@@ -103,8 +103,10 @@
 
         document.querySelector("#firstBtn").addEventListener("click", function(){
             let firstUl = document.querySelector("#firstUl");
+            let firstUlbyId = document.getElementById("firstUl");
 
             firstUl.removeAttribute("hidden");
+            firstUlbyId.removeAttribute("hidden");
         });
     }
 
