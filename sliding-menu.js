@@ -64,7 +64,7 @@
             if (this.firstConnection === true){
                 if (this._shadowRoot.innerHTML.length < 1){
                     this.redraw();
-                    loadthis(this);
+                    loadthis(that);
                 }
             }
 		}
