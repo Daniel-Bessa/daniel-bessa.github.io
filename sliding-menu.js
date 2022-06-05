@@ -12,22 +12,51 @@
       </div>
 
       <script id="oView" name="oView" type="sapui5/xmlview">
-          <mvc:View
-        controllerName="myView.Template"
-      xmlns:l="sap.ui.layout"
-      xmlns:mvc="sap.ui.core.mvc"
-      xmlns="sap.m">
-      <l:VerticalLayout
-        class="sapUiContentPadding"
-        width="100%">
-        <l:content>
-          <Input
-            id="passwordInput"
-            type="Password"
-            placeholder="Enter password ..." liveChange="onButtonPress"/>
-        </l:content>
-      </l:VerticalLayout>
-    </mvc:View>
+        <mvc:View
+            controllerName="sap.tnt.sample.NavigationList.C"
+            xmlns="sap.m"
+            xmlns:mvc="sap.ui.core.mvc"
+            xmlns:tnt="sap.tnt"
+            height="100%">
+            <OverflowToolbar>
+                <Button
+                    text="Toggle Collapse/Expand"
+                    icon="sap-icon://menu2"
+                    press=".onCollapseExpandPress" />
+                <Button
+                    text="Show/Hide SubItem 3"
+                    icon="sap-icon://menu2"
+                    press=".onHideShowSubItemPress" />
+            </OverflowToolbar>
+            <tnt:NavigationList
+                id="navigationList"
+                width="320px"
+                selectedKey="subItem3">
+                <tnt:NavigationListItem text="Item 1" key="rootItem1" icon="sap-icon://employee">
+                    <tnt:NavigationListItem text="Sub Item 1" />
+                    <tnt:NavigationListItem text="Sub Item 2" />
+                    <tnt:NavigationListItem text="Sub Item 3" id="subItemThree" key="subItem3" />
+                    <tnt:NavigationListItem text="Sub Item 4" />
+                    <tnt:NavigationListItem text="Invisible Sub Item 5" visible="false" />
+                    <tnt:NavigationListItem text="Invisible Sub Item 6" visible="false" />
+                </tnt:NavigationListItem>
+                <tnt:NavigationListItem
+                    text="Invisible Section"
+                    icon="sap-icon://employee"
+                    visible="false">
+                    <tnt:NavigationListItem text="Sub Item 1" />
+                    <tnt:NavigationListItem text="Sub Item 2" />
+                    <tnt:NavigationListItem text="Sub Item 3" />
+                    <tnt:NavigationListItem text="Sub Item 4" />
+                </tnt:NavigationListItem>
+                <tnt:NavigationListItem text="Item 2" icon="sap-icon://building">
+                    <tnt:NavigationListItem text="Sub Item 1" />
+                    <tnt:NavigationListItem text="Sub Item 2" />
+                    <tnt:NavigationListItem text="Sub Item 3" />
+                    <tnt:NavigationListItem text="Sub Item 4" />
+                </tnt:NavigationListItem>
+            </tnt:NavigationList>
+        </mvc:View>
       </script>        
   `;
 
@@ -150,10 +179,6 @@
           });
           oView.placeAt(content);
 
-
-          if (that_._designMode) {
-              oView.byId("passwordInput").setEnabled(false);
-          }
       });
   }
 })();
