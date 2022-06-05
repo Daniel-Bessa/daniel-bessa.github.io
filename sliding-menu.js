@@ -2,18 +2,20 @@
     let tmpl = document.createElement('template');
     tmpl.innerHTML = `
         <nav>
+            <button>Sales Analytics</button>
             <ul>
-                <li>Test 1</li>
-                <li>Test 2</li>
-                <li>Test 3</li>
-                <li>Test 4</li>
+                <li>Proxy Sales</li>
+                <li>Proxy Analysis</li>
+                <li>Proxy &O</li>
             </ul>
+            <button>AI Sales Forecasting</button>
+            <button>AI Cash Forecasting</button>
             <ul>
-                <li>Test 1</li>
-                <li>Test 2</li>
-                <li>Test 3</li>
-                <li>Test 4</li>
+                <li></li>
+                <li></li>
+                <li></li>
             </ul>
+            <button>Business Input</button>
         </nav>
     `;
 
