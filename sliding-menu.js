@@ -35,6 +35,7 @@
             display: inline-block;
             width: 24px;
             height: 24px;
+            background-size: 24px;
             background-repeat: no-repeat;
             background-position: left 0px center;
           }
