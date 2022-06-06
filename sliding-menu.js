@@ -99,11 +99,9 @@
             var shadow = window.getSelection(this._shadowRoot);
             console.log("shadow", shadow);
 
-            var that_ = that;
-            // this._shadowRoot.appendChild
-
             let firstBtn = this.$().find("#firstBtn");
             console.log("This is a test to see firstBtn", firstBtn.parentNode);
+
             let button = document.getElementById("firstBtn");
             console.log("This is button", button);
 
