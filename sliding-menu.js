@@ -30,7 +30,7 @@
               text-align: left;
               cursor: pointer;
               background-color: #fff;
-              font-size: 20px;
+              font-size: 10px;
 
               
           }
@@ -58,7 +58,7 @@
           }
           li {
             padding: 5px;
-            font-size: 18px;
+            font-size: 10px;
             cursor: pointer;
           }
       </style>
@@ -66,7 +66,7 @@
         <div>
           <div><span style="background-image: url('https://daniel-bessa.github.io/icons/show_chart_FILL0_wght400_GRAD0_opsz48.svg')"></span><button id="firstBtn">Sales Analytics</button><small></small></div>
           <ul id="firstUl">
-            <li>Proxy Sales</li>
+            <li id="li1">Proxy Sales</li>
             <li>Proxy Analysis</li>
             <li>Proxy &O</li>
           </ul>
