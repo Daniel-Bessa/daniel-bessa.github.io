@@ -4,9 +4,9 @@
 	"eula": "",
 	"vendor": "Daniel Santos",
 	"license": "",
-	"id": "com.sap.sliding.menu.0",
+	"id": "com.sap.sliding.menu.1",
 	"newInstancePrefix": "SlidingMenu",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"icon": "",
 	"webcomponents": [
     {
