@@ -12,7 +12,7 @@
     {
 			"kind": "main",
 			"tag": "com-sap-sliding-menu",
-      "url": "https://daniel-bessa.github.io/sliding-menu.js",
+      "url": "https://sac-dev-cw.novartis.net/cw/dev/NAVIGATION_LIST/sliding-menu.js",
       "integrity": "",
       "ignoreIntegrity" : true
     }

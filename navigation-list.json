@@ -1,0 +1,26 @@
+{
+  "id": "com.DS.nav.list.0.sap.sac",
+  "version": "0.0.0",
+  "name": "Navigation List v0",
+  "description": "Navigation List v0",
+  "newInstancePrefix": "Navigation_List_v0",
+  "vendor": "Daniel Santos",
+  "eula": "",
+  "license": "",
+	"supportsMobile": true,
+  "imports": [
+    "input-controls"
+  ],
+  "webcomponents": [
+    {
+      "kind": "main",
+      "tag": "com-ds-nav-list-sap-sac",
+      "url": "https://sac-dev-cw.novartis.net/cw/dev/Navigation_List/navigation-list.js",
+      "integrity": "",
+      "ignoreIntegrity": true
+    }
+  ],
+  "properties": {},
+  "methods": {},
+  "events": {}
+}
