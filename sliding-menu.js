@@ -98,21 +98,31 @@
         redraw(){
             var shadow = window.getSelection(this._shadowRoot);
             console.log("shadow", shadow);
+
+            var that_ = that;
             // this._shadowRoot.appendChild
+
+            let firstBtn = this.$().find("#firstBtn");
+            console.log("This is a test to see firstBtn", firstBtn.parentNode);
+            let button = document.getElementById("firstBtn");
+            console.log("This is button", button);
+
+            let navDiv = this.$().find("nav");
+            console.log("this is a test too see nav", navDiv);
         }
 
     });
 
     function loadthis(that){
-        var that_ = that;
+        // var that_ = that;
 
-        let firstBtn = this.$().find("#firstBtn");
-        console.log("This is a test to see firstBtn", firstBtn.parentNode);
-        let button = document.getElementById("firstBtn");
-        console.log("This is button", button);
+        // let firstBtn = this.$().find("#firstBtn");
+        // console.log("This is a test to see firstBtn", firstBtn.parentNode);
+        // let button = document.getElementById("firstBtn");
+        // console.log("This is button", button);
 
-        let navDiv = this.$().find("nav");
-        console.log("this is a test too see nav", navDiv);
+        // let navDiv = this.$().find("nav");
+        // console.log("this is a test too see nav", navDiv);
     }
 
 })();
