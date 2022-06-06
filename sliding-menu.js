@@ -14,7 +14,7 @@
             'opsz' 24
           }
           nav {
-              width: 50px;
+              width: 32px;
               height: 100%;
               overflow: hidden;
               white-space: nowrap;
@@ -23,8 +23,7 @@
           }
           button {
               position: relative;
-              // width: 100%;
-              top: -7px;
+              top: -6px;
               padding:10px;
               border: 0px;
               text-align: left;
@@ -167,7 +166,7 @@
     });
 
     navBar.addEventListener("mouseout", function (event){
-      navBar.style.width = "50px";
+      navBar.style.width = "32px";
     });
 
     navBar.addEventListener("mouseleave", function (event){
