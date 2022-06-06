@@ -111,6 +111,13 @@
 
         let navDiv = this.$().find("nav");
         console.log("this is a test too see nav", navDiv);
+
+        windows.onclick = e => {
+
+            let target = e.target || e.srcElement;
+
+            console.log("this is target", target);
+        }
     }
 
 })();
