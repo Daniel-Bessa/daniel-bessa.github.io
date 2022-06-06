@@ -73,7 +73,7 @@
         </div>
 
         <div>
-          <div><span style="background-image: url('https://daniel-bessa.github.io/icons/bar_chart_FILL0_wght400_GRAD0_opsz48.svg')"></span><button id="secondBtn">AI Sales Forecasting</button><small></small></div>
+          <div><span style="background-image: url('https://daniel-bessa.github.io/icons/bar_chart_FILL0_wght400_GRAD0_opsz48.svg')"></span><button id="secondBtn">AI Sales Forecasting</button></div>
         </div>
 
         <div>
@@ -86,7 +86,7 @@
         </div>
         
         <div>
-          <div><span style="background-image: url('https://daniel-bessa.github.io/icons/signal_cellular_alt_FILL0_wght400_GRAD0_opsz48.svg')"></span><button id="forthBtn">Business Input</button><small></small></div>
+          <div><span style="background-image: url('https://daniel-bessa.github.io/icons/signal_cellular_alt_FILL0_wght400_GRAD0_opsz48.svg')"></span><button id="forthBtn">Business Input</button></div>
         </div>
       </nav>
   `;
