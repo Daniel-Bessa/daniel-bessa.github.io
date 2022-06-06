@@ -42,8 +42,8 @@
           small {
             position: relative;
             display: inline-block;
-            height: 10px;
-            width: 10px;
+            height: 8px;
+            width: 8px;
             top: -5px;
             background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7.41' height='12' viewBox='0 0 7.41 12'%3E%3Cpath d='M10,6,8.59,7.41,13.17,12,8.59,16.59,10,18l6-6Z' transform='translate(-8.59 -6)' fill='%23000'/%3E%3C/svg%3E");
             background-repeat: no-repeat;
