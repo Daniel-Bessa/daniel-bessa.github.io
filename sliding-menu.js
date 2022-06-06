@@ -71,10 +71,10 @@
          //When the custom widget is updated, the Custom Widget SDK framework executes this function first
 		onCustomWidgetBeforeUpdate(oChangedProperties) {
             if (this.firstConnection === true){
-                // if (this._shadowRoot.innerHTML.length < 1){
-                //     this.redraw();
-                //     loadthis(that);
-                // }
+                if (this._shadowRoot.innerHTML.length < 1){
+                    this.redraw();
+                    loadthis(that);
+                }
             }
 		}
 
@@ -82,7 +82,7 @@
 		onCustomWidgetAfterUpdate(oChangedProperties) {
             var that = this;
             loadthis(that);
-            // this.redraw();
+            this.redraw();
         }
         
         //When the custom widget is removed from the canvas or the analytic application is closed
