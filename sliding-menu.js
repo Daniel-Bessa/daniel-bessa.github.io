@@ -97,7 +97,11 @@
         }
         */
 
-        redraw(){}
+        redraw(){
+            var shadow = window.getSelection(this._shadowRoot);
+            console.log("shadow", shadow);
+            // this._shadowRoot.appendChild
+        }
 
     });
 
