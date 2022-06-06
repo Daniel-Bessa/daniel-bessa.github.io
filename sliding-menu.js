@@ -11,7 +11,7 @@
             'FILL' 0,
             'wght' 400,
             'GRAD' 0,
-            'opsz' 48
+            'opsz' 24
           }
           nav {
               width: 50px;
@@ -36,8 +36,8 @@
           }
           span {
             display: inline-block;
-            width: 50px;
-            height: 50px;
+            width: 32px;
+            height: 32px;
             background-repeat: no-repeat;
             background-position: left 0px center;
           }
