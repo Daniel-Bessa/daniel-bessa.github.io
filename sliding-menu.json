@@ -2,7 +2,7 @@
 	"name": "Sliding Menu",
 	"description": "Sliding Menu",
 	"eula": "",
-	"vendor": "Daniel Santos",
+	"vendor": "",
 	"license": "",
 	"id": "com.sap.sliding.menu.1",
 	"newInstancePrefix": "SlidingMenu",
@@ -12,7 +12,7 @@
     {
 			"kind": "main",
 			"tag": "com-sap-sliding-menu",
-      "url": "https://sac-dev-cw.novartis.net/cw/dev/NAVIGATION_LIST/sliding-menu.js",
+      "url": "https://daniel-bessa.github.io/sliding-menu.js",
       "integrity": "",
       "ignoreIntegrity" : true
     }

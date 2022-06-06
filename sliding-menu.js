@@ -64,7 +64,7 @@
       </style>
       <nav id="nav">
         <div>
-          <div><span style="background-image: url('https://sac-dev-cw.novartis.net/cw/dev/NAVIGATION_LIST/icons/show_chart_FILL0_wght400_GRAD0_opsz48.svg')"></span><button id="firstBtn">Sales Analytics</button><small></small></div>
+          <div><span style="background-image: url('https://daniel-bessa.github.io/icons/show_chart_FILL0_wght400_GRAD0_opsz48.svg')"></span><button id="firstBtn">Sales Analytics</button><small></small></div>
           <ul id="firstUl">
             <li>Proxy Sales</li>
             <li>Proxy Analysis</li>
@@ -73,11 +73,11 @@
         </div>
 
         <div>
-          <div><span style="background-image: url('https://sac-dev-cw.novartis.net/cw/dev/NAVIGATION_LIST/icons/bar_chart_FILL0_wght400_GRAD0_opsz48.svg')"></span><button id="secondBtn">AI Sales Forecasting</button><small></small></div>
+          <div><span style="background-image: url('https://daniel-bessa.github.io/icons/bar_chart_FILL0_wght400_GRAD0_opsz48.svg')"></span><button id="secondBtn">AI Sales Forecasting</button><small></small></div>
         </div>
 
         <div>
-          <div><span style="background-image: url('https://sac-dev-cw.novartis.net/cw/dev/NAVIGATION_LIST/icons/area_chart_FILL0_wght400_GRAD0_opsz48.svg')"></span><button id="thirdBtn">AI Cash Forecasting</button><small></small></div>
+          <div><span style="background-image: url('https://daniel-bessa.github.io/icons/area_chart_FILL0_wght400_GRAD0_opsz48.svg')"></span><button id="thirdBtn">AI Cash Forecasting</button><small></small></div>
           <ul id="thirdUl">
             <li>Proxy Sales</li>
             <li>Proxy Analysis</li>
@@ -86,7 +86,7 @@
         </div>
         
         <div>
-          <div><span style="background-image: url('https://sac-dev-cw.novartis.net/cw/dev/NAVIGATION_LIST/icons/signal_cellular_alt_FILL0_wght400_GRAD0_opsz48.svg')"></span><button id="forthBtn">Business Input</button><small></small></div>
+          <div><span style="background-image: url('https://daniel-bessa.github.io/icons/signal_cellular_alt_FILL0_wght400_GRAD0_opsz48.svg')"></span><button id="forthBtn">Business Input</button><small></small></div>
         </div>
       </nav>
   `;
